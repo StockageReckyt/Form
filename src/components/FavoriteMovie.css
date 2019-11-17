@@ -1,26 +1,26 @@
-.FormEmployee {
+.FavoriteMovie {
   width: 400px;
   margin: 0 auto;
   text-align: left;
 }
 
-.FormEmployee h1 {
+.FavoriteMovie h1 {
   text-align: center;
 }
 
-.FormEmployee .form-data {
+.FavoriteMovie .form-data {
   display: flex;
   justify-content: center;
   margin: 5px 0;
 }
 
-.FormEmployee .form-data label {
+.FavoriteMovie .form-data label {
   display: inline-block;
   width: 75px;
   margin-right: 10px;
   text-align: right;
 }
 
-.FormEmployee .form-data input:not([type="Submit"]) {
+.FavoriteMovie .form-data input:not([type="Submit"]) {
   flex-grow: 1;
 }
