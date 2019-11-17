@@ -8,7 +8,7 @@ export default class FavoriteMovie extends Component {
     this.state = {
       title: "",
       poster: "",
-      comments: ""
+      comment: ""
     };
     this.onChange = this.onChange.bind(this);
     this.submitForm = this.submitForm.bind(this);
@@ -79,13 +79,13 @@ export default class FavoriteMovie extends Component {
             </div>
 
             <div className="form-data">
-              <label htmlFor="comments">Comments</label>
+              <label htmlFor="comment">Comments</label>
               <textarea
                 required
-                id="comments"
-                name="comments"
+                id="comment"
+                name="comment"
                 onChange={this.onChange}
-                value={this.state.comments}
+                value={this.state.comment}
               />
             </div>
             <hr />
@@ -94,6 +94,11 @@ export default class FavoriteMovie extends Component {
             </div>
           </fieldset>
         </form>
+        <p>
+          {" "}
+          Si tu veux vérifier que l'ajout a bien été effectué =>{" "}
+          <a href="https://post-a-form.herokuapp.com/api/movies/">Clique ICI</a>
+        </p>
       </div>
     );
   }
